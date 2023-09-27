@@ -1,7 +1,14 @@
+// let container=document.querySelector(".todo-app")
+// let contain=document.createElement("div")
+// contain.setAttribute("id","contain")
+// container.append(contain)
+
 let todo=document.querySelector("#input-box")
 
 
-let list_container=document.querySelector("list-todo")
+
+
+let listContainer=document.querySelector(".list-todo")
 let todo_button=document.querySelector(".btn")
 todo_button.addEventListener("click", function(){
     if(todo.value ===""){
@@ -50,8 +57,13 @@ let todoList=document.querySelector(".list-todo")
         todoText.style.textDecoration="line-through"
        })
     }
-  
+    let clearALL=document.getElementById("clearAll")
+    clearALL.addEventListener("click",function(){
+        document.querySelectorAll("#todo-holder").forEach(function(ele,indx){
+         document.querySelector(".list-todo").removeChild(ele)
+        })
+    })
+
 
 })
-
 
