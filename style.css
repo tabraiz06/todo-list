@@ -11,6 +11,11 @@
     background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 }
+#contain{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
 .todo-app{
 
     width: 100%;
@@ -63,6 +68,7 @@ button{
     font-size: 1rem;
     font-weight: 600;
     color: black;
+    margin-bottom: 15px;
 }
 .list-todo{
     align-items: center;
